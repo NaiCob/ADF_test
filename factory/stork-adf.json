@@ -1,0 +1,9 @@
+{
+	"name": "stork-adf",
+	"location": "northeurope",
+	"identity": {
+		"type": "SystemAssigned",
+		"principalId": "94ed151c-3454-4766-946e-e62ad02298bb",
+		"tenantId": "532f710c-100f-4e8a-8a70-70285da992a6"
+	}
+}
