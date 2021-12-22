@@ -1,0 +1,26 @@
+{
+	"name": "wait_parameterized_copy",
+	"properties": {
+		"activities": [
+			{
+				"name": "Wait4u",
+				"type": "Wait",
+				"dependsOn": [],
+				"userProperties": [],
+				"typeProperties": {
+					"waitTimeInSeconds": {
+						"value": "@pipeline().parameters.offset",
+						"type": "Expression"
+					}
+				}
+			}
+		],
+		"parameters": {
+			"offset": {
+				"type": "int",
+				"defaultValue": 5
+			}
+		},
+		"annotations": []
+	}
+}
