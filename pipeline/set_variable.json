@@ -1,0 +1,31 @@
+{
+	"name": "set_variable",
+	"properties": {
+		"activities": [
+			{
+				"name": "Set offset",
+				"type": "SetVariable",
+				"dependsOn": [],
+				"userProperties": [],
+				"typeProperties": {
+					"variableName": "val_offset",
+					"value": {
+						"value": "@string(pipeline().parameters.offset)",
+						"type": "Expression"
+					}
+				}
+			}
+		],
+		"parameters": {
+			"offset": {
+				"type": "int"
+			}
+		},
+		"variables": {
+			"val_offset": {
+				"type": "String"
+			}
+		},
+		"annotations": []
+	}
+}
